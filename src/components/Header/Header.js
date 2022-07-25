@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -15,19 +15,19 @@ const Header = () => {
         </div>
         <ul className={`md:flex absolute p-6 font-bold bg-slate-400 md:bg-white  md:font-semibold md:static ${open ? "top-15 right-1" : "top-[-290px]"}`}>
           <li className="my-3 md:mr-3">
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="my-3 md:mr-3">
-            <Link to="/friends">Friends</Link>
+            <NavLink to="/friends">Friends</NavLink>
           </li>
           <li className="my-3 md:mr-3">
-            <Link to="/about">About Us</Link>
+            <NavLink to="/about">About Us</NavLink>
           </li>
           <li className="my-3 md:mr-3">
-            <Link to="/support">Support</Link>
+            <NavLink to="/support">Support</NavLink>
           </li>
           <li className="my-3 md:mr-3">
-            <Link to="/contact">Contacts</Link>
+            <NavLink to="/contact">Contacts</NavLink>
           </li>
         </ul>
       </div>
