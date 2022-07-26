@@ -8,7 +8,7 @@ const Friends = () => {
     axios.get("https://jsonplaceholder.typicode.com/users").then((data) => setFriends(data.data));
   }, []);
   return (
-    <div className="grid grid-cols-4 gap-5 p-9">
+    <div className="grid md:grid-cols-4 gap-5 p-9">
       {friends.map((friend) => (
         <Friend key={friend.id} friend={friend}></Friend>
       ))}

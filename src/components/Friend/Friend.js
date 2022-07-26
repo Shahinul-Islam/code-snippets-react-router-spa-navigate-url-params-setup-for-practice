@@ -18,7 +18,7 @@ const Friend = ({ friend }) => {
       </Link>
       <div className="mt-4">
         <button onClick={showFriendDetail} className="bg-indigo-800 px-3 py-2 rounded text-white">
-          Details: {id}
+          Details
         </button>
       </div>
     </div>

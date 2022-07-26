@@ -8,6 +8,8 @@ import Support from "./components/Support/Support";
 import Contact from "./components/Contact/Contact";
 import Friends from "./components/Friends/Friends";
 import SingleFriendDetails from "./components/SingleFriendDetails/SingleFriendDetails";
+import Posts from "./components/Posts/Posts";
+import PostDetails from "./components/PostDetails/PostDetails";
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
         <Route path="friends" element={<Friends></Friends>}></Route>
         <Route path="friends/:friendId" element={<SingleFriendDetails />}></Route>
         <Route path="about" element={<About></About>}></Route>
+        <Route path="posts" element={<Posts />}>
+          <Route path=":postId" element={<PostDetails></PostDetails>}></Route>
+        </Route>
         <Route path="support" element={<Support></Support>}></Route>
         <Route path="contact" element={<Contact></Contact>}></Route>
       </Routes>
